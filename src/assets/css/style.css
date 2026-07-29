@@ -1,0 +1,921 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../css/helvetica-255/Helvetica.ttf") format("woff2");
+}
+.hlogo{
+    /* display: inline-flex;
+    align-items: baseline; */
+}
+.hlogo span{
+    font-family: Inter;
+    font-weight: 800;
+    font-style: Italic;
+    font-size: 28px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+.navbarlink{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+
+}
+.navbarlink:hover{
+    color: #d8d8d8
+
+}
+.navbarlinksignup{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #195142;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 14px 20px;
+    border:1px solid #195142;
+}
+.navbarlinksignup {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: #fff; 
+  color: #195142;
+  transition: color 0.3s ease;
+}
+
+.navbarlinksignup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e8e8e8; 
+  transform: scaleX(0);
+  transform-origin: right; /* Start from the right */
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.navbarlinksignup:hover::before {
+  transform: scaleX(1); /* Fill to the left */
+}
+
+.navbarlinksignup:hover{
+    color: #195142;
+    border: 1px solid #fff;
+}
+.txthmebi{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+
+}
+.txthmebip{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #fff;
+}
+.disclamerp{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #FFF2F2;
+    margin-top: 5em;
+
+}
+.winingbtn1 {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    color: #195142;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 15px 30px;
+    transition: color 0.35s ease;
+}
+
+.winingbtn1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #195142;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: -1;
+}
+
+.winingbtn1:hover {
+    color: #fff;
+}
+
+.winingbtn1:hover::before {
+    transform: scaleX(1);
+}
+.winingbtn2{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    letter-spacing: 0%;
+    color: #FFF;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 15px 20px;
+    border: 1px solid #FFFFFF;
+    transition: color 0.35s ease;
+
+}
+.winingbtn2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: -1;
+}
+
+.winingbtn2:hover {
+    color: #195142;
+}
+.winingbtn2:hover::before {
+    transform: scaleX(1);
+}
+.ourstoryh{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #323232;
+
+
+}
+.ourstoryh1{
+    font-family: Inter;
+    font-weight: 800;
+    font-style: Extra Bold;
+    font-size: 56px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #17211C
+
+
+}
+.ourstoryhp{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 29.7px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #17211CCC;
+
+
+}
+.ourstorytxth{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    color: #0E3B2E
+
+}
+.ourstorytxthp{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 26.4px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #17211CD1;
+
+
+}
+.badge-card {
+  border: 2px solid #87978f;
+  background: #e8f0ef;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.badge-card:nth-child(1) {
+  transform: rotate(0deg);
+  border-radius: 10px 8px 10px 10px;
+}
+
+.badge-card:nth-child(2) {
+  transform: rotate(-2deg);
+  border-radius: 8px 10px 9px 11px;
+}
+
+.badge-card:nth-child(3) {
+  transform: rotate(1deg);
+  border-radius: 9px 8px 10px 9px;
+}
+
+.badge-card:nth-child(4) {
+  transform: rotate(0.5deg);
+  border-radius: 10px 8px 8px 10px;
+}
+
+.badge-card:nth-child(5) {
+  transform: rotate(2deg);
+  border-radius: 8px 10px 10px 8px;
+}
+.bagescardtxtun{
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #0E3B2E;
+    height: 4em;
+    width: 4.5em;
+    background-color: #DFEAE7;
+
+}
+.bagescardtxtunn{
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #0E3B2E
+}
+.signalstory{
+    border: 1px solid #17211C2E;
+    background: linear-gradient(0deg, rgba(39, 116, 96, 0.15), rgba(39, 116, 96, 0.15)),
+radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.05) 5.05%, rgba(23, 33, 28, 0) 5.05%);
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #0E3B2E;
+    border-radius: 6px;
+
+}
+.storypredict{
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232
+
+}
+.storypredictbtn{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #F4F2E9;
+    background-color: #0E3B2E;
+    border-radius: 5px;
+
+
+}
+.footer{
+    background:
+    url("../img/footerbg.png"),
+    url("../img/footerbg1.png");
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+.footertxt{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #FFF2F2;
+    border: 0.5px solid #FFFFFF;
+
+
+}
+.footertagline{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+
+}
+.footerlink{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+
+}
+.footerlink:hover{
+    color: #d8d8d8
+}
+.footerlinktop{
+    margin-top: 3em
+}
+.logoauth{
+    width: 70%;
+}
+.sideauthh2{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff
+}
+.sideauthp{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-top: 2em;
+}
+.sideauthyear{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-top: 7em;
+    padding-bottom: 20px;
+}
+.authimgfloat{
+    margin-top: 3em;
+    margin-bottom: 4.5em;
+}
+.authimgfloatimg{
+    width: 90%;
+    margin: auto;
+}
+.authh1{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    vertical-align: middle;
+    color: #17211C;
+
+}
+.authp{
+    font-family: Instrument Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232;
+    padding-top: 10px;
+
+}
+.authform{
+    background: linear-gradient(0deg, #DDECE1, #DDECE1),
+radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.05) 5.05%, rgba(23, 33, 28, 0) 5.05%);
+    border: 1px solid #17211C33;
+    border-radius: 6px;
+}
+.authformtxtf{
+
+}
+.authformtxtf label{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0.4px;
+    vertical-align: middle;
+    color: #17211CBF;
+
+
+}
+.authformtxtf input{
+    background: #F6FDFC;
+    border: 1px solid #17211C66;
+    padding: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 17.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232;
+
+}
+.authformtxtfbutton{
+    background-color: #0E3B2E;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #F4F2E9;
+    padding:15px;
+
+
+}
+.authformforget{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #0E3B2E;
+
+}
+.authformnewaccount{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1.2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #323232
+}
+.authformnewaccount span{
+    background: #17211C2E;
+
+}
+.authtip{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12.5px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #32323280
+
+}
+.authcreateacc{
+    border: 1px solid #0E3B2E;
+    border-radius: 5px;
+    font-family: Instrument Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #0E3B2E;
+    padding: 15px;
+}
+.pb0{
+    padding-bottom: 0;
+}
+.agreetandc{
+    accent-color: #195142;
+
+}
+.agreetandctxt{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6C6C6C;
+
+}
+.forumheader{
+    margin-top: 7em;
+
+}
+.forumheader h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff
+
+
+}
+.forumheader p{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    max-width: 50%
+
+
+}
+.forumcatsearch{
+    border: 1px solid #17211C59;
+    background: #E9F4EB;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 17.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232;
+
+}
+.foruarticle{
+    border: 1px solid #17211C33;
+    background: #DDECE1;
+
+}
+.forumarticleh{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #323232;
+
+}
+.forumarticlep{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #323232
+}
+.forumarticlename{
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #808080
+
+}
+.imgforumwh{
+    width: 100%
+}
+.widforumtp{
+    width:80%;
+    margin-top:3em
+}
+.predichish{
+
+}
+.predichish h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#fff
+
+
+}
+.predichish p{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #fff;
+    max-width: 100%;
+    margin-top:2em;
+
+}
+
+.predichishsec{
+    padding-top: 7em;
+    padding-bottom: 7em;
+
+}
+.predictimportnote{
+    border: 0.5px solid #0E3B2E;
+    border-radius: 4px;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #0E3B2E;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+}
+
+.predictresultheadertop{
+    background: linear-gradient(0deg, #DDECE1, #DDECE1),
+radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.04) 5.05%, rgba(23, 33, 28, 0) 5.05%);
+    border-bottom: 1px solid #17211C24;
+}
+.predictresultheadertop{
+
+}
+.predictresultheader h3{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #17211C;
+
+
+
+}
+.predictresultheader p{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232;
+    padding-top: 15px;
+}
+.predictresultheaderhigh{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    color: #323232;
+    border: 1px solid #323232;
+    padding: 8px 10px;
+}
+.predictresultheadertpp{
+    border: 1px solid #17211C33;
+    background: #F6FDFA;
+    border-radius: 6px;;
+}
+.predicttopnumb{
+    justify-content: center;
+}
+.predictpredicpoolofficiald{
+    /* place-items: center; */
+    margin-top: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+.predictpredicpoolofficialdun{text-align: center;}
+.predictpredicpoolofficialdun p{font-family: Inter;font-weight: 500;font-style: Medium;font-size: 14px;leading-trim: NONE;line-height: 100%;letter-spacing: 1.2px;vertical-align: middle;text-transform: uppercase;color: #323232;margin-bottom: 30px;margin-top: 10px;/* padding-top: 33px; */}
+
+.predictpredicpoolofficialdunn{font-family: IBM Plex Mono;font-weight: 400;font-style: Regular;font-size: 13px;leading-trim: NONE;line-height: 100%;letter-spacing: 0%;vertical-align: middle;color: #17211C;border: 1px solid #17211C66;}
+.predictpredicpoolofficialdunnactive{
+    font-family: IBM Plex Mono;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    border: 2px solid #2BC0A7;
+    background: #2BC0AF14;
+    color: #2BC0A7;
+}
+.predictpredicpoolofficialdunbtnn1{justify-content: center;}
+.predictpredicpoolofficialdunbtnn{gap: 20px;justify-content: center;}
+.predictpredicpoolofficialdunbtnn span{
+    font-family: IBM Plex Mono;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #F4F2E9;
+    background: #0E3B2E;
+    border-radius: 6px;
+}
+.underofficialdraw{
+    border-top: 1px dashed #17211C40;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #323232;
+}
+.predictshowimgresuicontop{
+
+}
+.predictshowimgresuicon{
+
+}
+.predictshowimgresuicon p{font-family: Inter;font-weight: 500;font-style: Medium;font-size: 16px;leading-trim: NONE;line-height: 100%;letter-spacing: 0%;vertical-align: middle;color: #17211C;}
+.predictshowimgresuicon button{border: 1px solid #17211C59;background: #E9F4EB;color: #17211C;height: 40px;width: 40px;}
+.predictshowimgresusearch{
+
+}
+.predictshowimgresusearch1{
+
+
+}
+.predictshowimgresusearch2{border: 1px solid #17211C59;height: 40px;width: 21em;background: #E9F4EB;font-family: IBM Plex Mono;font-weight: 400;font-style: Regular;font-size: 13.5px;leading-trim: NONE;line-height: 17.5px;letter-spacing: 0%;vertical-align: middle;color: #17211C;}
+.predictshowimgresusearch3{
+
+}
+.predictshowimgresuperpage{
+
+}
+.predictshowimgresuperpage span{font-family: Inter;font-weight: 400;font-style: Regular;font-size: 14px;leading-trim: NONE;line-height: 100%;letter-spacing: 0%;vertical-align: middle;color: #17211CA6;}
+.predictshowimgresuperpage button{
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13.5px;
+    leading-trim: NONE;
+    line-height: 17.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #17211C;
+    height: 45px;
+    width: 50px;
+}
+.borderstoryleft{
+     border-color: #17211C33;
+     border-left-width: 2px;
+     margin-bottom: 4em;
+}
+.borderstoryleftactive{left: -47px;background: #0E3B2E;border: 2px solid #0E3B2E;}
+.borderstorylefttxt{
+    left: -47px;
+    border: 2px solid #0E3B2E;
+    background: #F4F2E9;
+}
+.headerbgg{
+    background-image: url("../img/Background Lines1.png");
+}
+.herohme {
+  background:
+    url("../img/hmeBackgroundLines.png"),
+    url("../img/hmebggreen.png");
+}
+.headeranothertop{
+     background:
+    url("../img/othertopbg.png"),
+    url("../img/othertopbg1.png");
+
+}
+.headeranothertoppredict{
+     background:
+    url("../img/predictbg.png"),
+    url("../img/predictbg1.png");
+
+}
+.headernav{
+     background:
+    url("../img/headerbg.png"),
+    url("../img/headerbg1.png");
+
+}
+.navlogoimg{
+    padding-bottom: 25px;
+
+}
+.navlogotop{
+    padding-bottom: 15px;
+
+}
+@media screen and (max-width: 632px) {
+    .imgforumwh{
+        width: 100%;
+        height: auto;
+    }
+    .widforumtp{
+        width: 100%;
+    }
+    
+}

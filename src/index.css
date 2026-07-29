@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter";
+  --font-body: "Inter";
+
+  --color-forest-950: #0c2a22;
+  --color-forest-900: #123a2f;
+  --color-forest-800: #1a4a3c;
+  --color-forest-700: #235c4a;
+  --color-forest-600: #2d6f5a;
+  --color-forest-500: #3d8570;
+  --color-mint-100: #e6f0ea;
+  --color-mint-50: #f3f8f5;
+  --color-ink: #10221c;
+  --color-gold: #f2b544;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-fade-up: fade-up 0.7s ease-out both;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: #ffffff;
+}
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.bg-forest-grid {
+  background-image:
+    linear-gradient(135deg, var(--color-forest-950) 0%, var(--color-forest-700) 55%, var(--color-forest-500) 100%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 120px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 120px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
