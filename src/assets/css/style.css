@@ -344,6 +344,7 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.05) 5.05%, rgba(23,
     background:
     url("../img/footerbg.png"),
     url("../img/footerbg1.png");
+
     padding-top: 4em;
     padding-bottom: 2em;
 }
@@ -418,7 +419,7 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.05) 5.05%, rgba(23,
     font-style: Regular;
     font-size: 13px;
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 20px;
     letter-spacing: 0%;
     color: #FFFFFF;
     margin-top: 7em;
@@ -579,7 +580,7 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.05) 5.05%, rgba(23,
     font-style: Regular;
     font-size: 12px;
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 16px;
     letter-spacing: 0%;
     vertical-align: middle;
     color: #6C6C6C;
@@ -915,6 +916,110 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.04) 5.05%, rgba(23,
     padding-bottom: 15px;
 
 }
+@media screen and (max-width: 999px) {
+    .widforumtp {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .predichishsec {
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+    .predichish h1 {
+        font-size: 41px;
+        line-height: 50px;
+    }
+    .predichish p {
+        font-size: 14px;
+        line-height: 150%;
+        max-width: revert-layer;
+        margin-top: 1em;
+    }
+    .forumarticleh {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .forumarticlep {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .forumarticlename {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .hlogo span {
+        font-size: 20px;
+    }
+    .navlogoimg {
+        padding-bottom: 19px;
+        width: 53px;
+    }
+    .hlogo {
+        gap: 0px;
+    }
+    .txthmebi {
+        font-size: 30px;
+    }
+    .txthmebip {
+        font-size: 14px;
+    }
+    .winingbtn2{
+        font-size: 11px;
+        padding: 10px 15px;
+    }
+    .winingbtn1{
+        font-size: 11px;
+        padding: 10px 25px;
+    }
+    .disclamerp {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 10px;
+    }
+    .ourstoryh {
+        font-size: 11px;
+    }
+    .ourstoryh1 {
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .ourstoryhp {
+        font-size: 14px;
+        line-height: 20.7px;
+    }
+    .ourstorytxth {
+        font-size: 15px;
+    }
+    .ourstorytxthp {
+        font-size: 12px;
+        line-height: 18.4px;
+    }
+    .bagescardtxtun{
+        height: 3em;
+        width: 3.5em;
+    }
+    .signalstory{
+        font-size: 18px;
+        line-height: 100%;;
+    }
+    .footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .footertxt {
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .footertagline {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+}
 @media screen and (max-width: 632px) {
     .imgforumwh{
         width: 100%;
@@ -923,5 +1028,55 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.04) 5.05%, rgba(23,
     .widforumtp{
         width: 100%;
     }
-    
+    .forumheader p{
+        max-width: 100%
+    }
+    .predictshowimgresuicon p {
+        font-size: 12px;
+    }
+    .predictshowimgresuicon button {
+        height: 30px;
+        width: 30px;
+    }
+    .predictshowimgresuperpage button{
+        height: 30px;
+        width: 30px;
+    }
+    .predictresultheader h3{
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 15px;
+    }
+
+    .predictresultheader p {
+        font-size: 11px;
+        padding-top: 10px;
+    }    
+}
+@media screen and (max-width: 419px){
+    .footer {
+        padding-top: 0em;
+        padding-bottom: 0em;
+    }
+
+}
+@media screen and (max-width: 353px){
+    .predictshowimgresuicon p {
+        font-size: 9px;
+    }
+    .predictshowimgresuicon button {
+        height: 22px;
+        width: 22px;
+    }
+    .predictimportnote {
+        font-size: 12px;
+        line-height: 132%;
+    }
+
+}
+@media screen and (max-width: 280px){
+    .hlogo span {
+        font-size: 10px;
+    }
 }
