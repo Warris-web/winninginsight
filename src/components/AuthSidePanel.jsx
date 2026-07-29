@@ -14,7 +14,7 @@ export default function AuthSidePanel() {
 
 
   return (
-    <div className="relative flex min-h-[420px] flex-col justify-between overflow-hidden bg-forest-grid px-8 py-10 md:min-h-screen md:px-14 md:py-12 pb0">
+    <div className="relative flex min-h-[420px] flex-col justify-between overflow-hidden authbg px-8 py-10 md:min-h-screen md:px-14 md:py-12 pb0">
       <div className="flex items-center justify-between">
         <Link
           to="#"

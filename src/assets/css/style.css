@@ -901,6 +901,12 @@ radial-gradient(70.71% 70.71% at 50% 50%, rgba(23, 33, 28, 0.04) 5.05%, rgba(23,
     url("../img/headerbg1.png");
 
 }
+.authbg{
+     background:
+    url("../img/authbg.png"),
+    url("../img/authbg1.png");
+
+}
 .navlogoimg{
     padding-bottom: 25px;
 
