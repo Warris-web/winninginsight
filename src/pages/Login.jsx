@@ -1,8 +1,47 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AuthSidePanel from "../components/AuthSidePanel";
+import { api, setToken } from "../services/api";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+    setLoading(true);
+
+    try {
+      const response = await api("/auth/login", {
+        identity: email,
+        password: password,
+        device_name: "web",
+      });
+
+      if (response.ok && response.token) {
+        setToken(response.token);
+        setSuccess("Login successful! Redirecting...");
+        setTimeout(() => {
+          navigate("/dashboard");
+        }, 1000);
+      } else {
+        setError(response.message || "Login failed. Please try again.");
+      }
+    } catch (err) {
+      setError("Network error. Please check your connection.");
+      console.error("Login error:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="grid min-h-screen md:grid-cols-2 ">
       <AuthSidePanel />
@@ -17,12 +56,15 @@ export default function Login() {
           <h1 className="font-display text-4xl font-bold text-ink authh1">Log in</h1>
           <p className="mt-2 text-ink/60 authp">Enter your email address to access your account.</p>
 
-          <form className="mt-8 space-y-5 rounded-2xl bg-mint-50 p-6 authform">
+          <form onSubmit={handleSubmit} className="mt-8 space-y-5 rounded-2xl bg-mint-50 p-6 authform">
             <div className="authformtxtf">
               <label className="mb-1.5 block text-sm font-semibold text-ink">Email</label>
               <input
                 type="email"
                 placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="w-full rounded-md border border-forest-600/20 bg-white px-4 py-3 text-sm outline-none ring-forest-600/40 transition focus:ring-2"
               />
             </div>
@@ -31,14 +73,22 @@ export default function Login() {
               <input
                 type="password"
                 placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
                 className="w-full rounded-md border border-forest-600/20 bg-white px-4 py-3 text-sm outline-none ring-forest-600/40 transition focus:ring-2"
               />
             </div>
+
+            {error && <div className="rounded-md bg-red-50 p-3 text-sm text-red-700">{error}</div>}
+            {success && <div className="rounded-md bg-green-50 p-3 text-sm text-green-700">{success}</div>}
+
             <button
               type="submit"
-              className="w-full rounded-md bg-forest-900 py-3.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 hover:shadow-lg authformtxtfbutton"
+              disabled={loading}
+              className="w-full rounded-md bg-forest-900 py-3.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-50 authformtxtfbutton"
             >
-              Log in
+              {loading ? "Logging in..." : "Log in"}
             </button>
             <a href="#" className="block text-center text-sm font-medium text-forest-800 hover:underline authformforget">
               Forgot password?
