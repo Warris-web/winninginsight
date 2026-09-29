@@ -36,7 +36,7 @@
    * Get stored authentication token
    * @returns {string} Token or empty string
    */
-  function getToken() {
+  export function getToken() {
     return localStorage.getItem('li_token') || '';
   }
 
@@ -44,7 +44,7 @@
    * Set authentication token
    * @param {string} token - Token to store
    */
-  function setToken(token) {
+  export function setToken(token) {
     if (token) {
       localStorage.setItem('li_token', token);
     } else {
@@ -56,7 +56,7 @@
    * Check if user is logged in
    * @returns {boolean}
    */
-  function isLoggedIn() {
+  export function isLoggedIn() {
     return !!getToken();
   }
 
@@ -67,7 +67,7 @@
    * @param {string} method - HTTP method (default: GET or POST based on body)
    * @returns {Promise<object>} API response
    */
-  async function api(path, body, method) {
+  export async function api(path, body, method) {
     const opts = {
       headers: {
         'Content-Type': 'application/json',
@@ -116,7 +116,7 @@
    * Get API base URL
    * @returns {string}
    */
-  function getApiBase() {
+  export function getApiBase() {
     return API_BASE;
   }
 
@@ -124,17 +124,7 @@
    * Set API base URL override
    * @param {string} baseUrl
    */
-  function setApiBase(baseUrl) {
+  export function setApiBase(baseUrl) {
     window.LI_API_BASE = baseUrl;
   }
-
-  // Export to window for global access
-  window.ApiService = {
-    api,
-    getToken,
-    setToken,
-    isLoggedIn,
-    getApiBase,
-    setApiBase,
-  };
 })();
