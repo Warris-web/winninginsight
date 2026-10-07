@@ -167,7 +167,7 @@ export default function CreateAccount() {
           <form onSubmit={submit} className="mt-8 space-y-5 rounded-2xl bg-mint-50 p-6 authform">
             <Field label="Email" type="email" placeholder="you@example.com" value={f.email} onChange={set("email")} autoComplete="email" />
             <Field label="Phone Number" type="tel" placeholder="+2347010203040" value={f.phone} onChange={set("phone")} autoComplete="tel" />
-            <Field label="Nickname" placeholder="Choose a nickname" value={f.nickname} onChange={set("nickname")} />
+            {/* <Field label="Nickname" placeholder="Choose a nickname" value={f.nickname} onChange={set("nickname")} /> */}
             <div className="authformtxtf">
               <label className="mb-1.5 block text-sm font-semibold text-ink">Country</label>
               <select className={inputClass} value={f.country_id} onChange={set("country_id")}>
@@ -176,7 +176,7 @@ export default function CreateAccount() {
             </div>
             <Field label="Password" type="password" placeholder="••••••••" value={f.password} onChange={set("password")} autoComplete="new-password" />
             <Field label="Confirm Password" type="password" placeholder="••••••••" value={f.confirm} onChange={set("confirm")} autoComplete="new-password" />
-            <p className="-mt-2 text-xs text-ink/50">Use at least 6 characters. Make sure both password fields match.</p>
+            {/* <p className="-mt-2 text-xs text-ink/50">Use at least 6 characters. Make sure both password fields match.</p> */}
 
             <label className="flex items-start gap-3 text-xs text-ink/60 agreetandctxt">
               <input type="checkbox" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} className="mt-0.5 h-4 w-4 accent-forest-800 agreetandc" />
